@@ -108,7 +108,7 @@
       if (right == 'initial')
         right = initialValues[ucProperty];
     }
-    var handlers = left == right ? [] : propertyHandlers[ucProperty];
+    var handlers = propertyHandlers[ucProperty];
     for (var i = 0; handlers && i < handlers.length; i++) {
       var parsedLeft = handlers[i][0](left);
       var parsedRight = handlers[i][0](right);
